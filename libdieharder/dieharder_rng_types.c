@@ -246,6 +246,25 @@ void dieharder_rng_types()
 
   ADD_RNG (drand48); // as in perl5
 
+  ADD_RNG (trng_lcg64);
+  ADD_RNG (trng_lcg64_shift);
+  ADD_RNG (trng_lcg64_count_shift);
+  ADD_RNG (trng_mrg2);
+  ADD_RNG (trng_mrg3);
+  ADD_RNG (trng_mrg3s);
+  ADD_RNG (trng_mrg4);
+  ADD_RNG (trng_mrg5);
+  ADD_RNG (trng_mrg5s);
+  ADD_RNG (trng_yarn2);
+  ADD_RNG (trng_yarn3);
+  ADD_RNG (trng_yarn3s);
+  ADD_RNG (trng_yarn4);
+  ADD_RNG (trng_yarn5);
+  ADD_RNG (trng_yarn5s);
+  ADD_RNG (trng_mt19937);
+  ADD_RNG (trng_mt19937_64);
+  ADD_RNG (trng_xoshiro256plus);
+
   MYDEBUG(D_TYPES){
     printf("# startup:  Found %u dieharder rngs.\n",dh_num_dieharder_rngs);
   }

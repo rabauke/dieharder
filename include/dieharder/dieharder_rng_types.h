@@ -112,6 +112,25 @@
 
  GSL_VAR const gsl_rng_type *gsl_rng_drand48;			/* rurban Nov 2020 */
 
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_lcg64;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_lcg64_shift;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_lcg64_count_shift;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mrg2;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mrg3;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mrg3s;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mrg4;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mrg5;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mrg5s;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_yarn2;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_yarn3;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_yarn3s;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_yarn4;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_yarn5;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_yarn5s;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mt19937;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_mt19937_64;
+ GSL_VAR const gsl_rng_type *gsl_rng_trng_xoshiro256plus;
+
  /*
   * rng global vectors and variables for setup and tests.
   */

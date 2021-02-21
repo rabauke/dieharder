@@ -25,7 +25,7 @@ AM_CFLAGS = -O3 -march=native -Wall -pedantic -Wno-unused-variable
 
 # Library definitions
 lib_LTLIBRARIES = libdieharder.la
-libdieharder_la_LIBADD = -lgsl -lgslcblas -lm
+libdieharder_la_LIBADD = -lgsl -lgslcblas -lm -ltrng4
 libdieharder_la_LDFLAGS = -no-undefined -version-number @DIEHARDER_LT_VERSION@
 libdieharder_la_CFLAGS = -std=c99 $(AM_CFLAGS) -Wno-unused-function -Wno-overlength-strings
 
@@ -117,6 +117,7 @@ libdieharder_la_SOURCES = \
 	rng_stdin_input_raw.c \
 	rng_threefish.c \
 	rng_threefry.c \
+	rng_trng.cc \
 	rng_uvag.c \
 	rng_wyrand.c \
 	rngs_xorshift.c \
